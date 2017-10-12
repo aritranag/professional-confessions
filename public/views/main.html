@@ -1,0 +1,108 @@
+<div>	
+	<div class="header">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#">Professional Confessions</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right" ng-hide="userprofile == null">
+						<li><a href="#" ng-click="logoutLinkedIn()"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+					</ul>
+				</div>	
+			</div>
+		</nav>
+	</div>
+<!--
+<div class="container">
+	
+	<h1>Hi, {{userprofile.firstName}} {{userprofile.lastName}}</h1>
+	<!-- --
+	<h1> Hi, {{ data.username }}</h1>
+	<div class="row">
+		<div class="col-sm-4 slightPadding">
+			<label for="user"> Posting as : </label>
+			<select id="user" class="form-control" name="user" ng-model="data.username">
+				<option value="{{data.option1}}">{{data.option1}}</option>
+				<option value="{{data.option2}}">{{data.option2}}</option>
+			</select>
+		</div>
+		<div class="col-sm-5"></div>
+		<div class="col-sm-3 pull-right">
+			<button class="btn btn-primary pull-right" ng-click="logoutLinkedIn()">Logout</button>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="comment">Comment:</label>
+		<textarea class="form-control" rows="15" id="comment" ng-model="data.text"></textarea>
+	</div>
+	<div class="row" ng-show="showError">
+		<div class="col-sm-12">
+			<label class="label-danger">You Need to enter some text</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 text-center">
+			<button class="btn btn-primary" ng-click="submitData()">Submit</button>
+		</div>
+        <div class="col-sm-2 text-center" ng-if="isAdmin">
+			<button class="btn btn-primary" ng-click="goToTimeline()">Timeline</button>
+		</div>
+	</div>
+	
+</div>
+<!-- -->
+
+	<div class="container main-container">
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-xs-10 col-sm-6 col-md-6 col-lg-5 text-center hello-user-label">
+				<p>Hi, {{ data.username }}</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 radio-label">
+				<form>
+					<label>Posting As : </label>&nbsp;
+					<label class="radio-inline">
+						<input type="radio" ng-model="data.username" ng-value="data.option1">{{ data.option1 }}
+					</label>
+					<label class="radio-inline">
+						<input type="radio" ng-model="data.username" ng-value="data.option2">
+						{{ data.option2}}
+					</label>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-sm-1 col-md-1"></div>
+			<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
+				<div class="form-group">
+					<label for="comment">Comment:</label>
+					<textarea class="form-control" rows="15" id="comment" ng-model="data.text"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="row" ng-show="showError">
+			<div class="col-xs-2 col-sm-1 col-md-1"></div>
+			<div class="col-xs-11 col-sm-4 col-md-4 col-lg-4 text-center">
+				<label class="label-danger">You Need to enter some text</label>
+			</div>
+		</div>
+		<div class="spacer2"></div>
+		<div class="row">
+			<div class="col-sm-4 col-xs-6 text-center">
+				<button class="btn btn-primary" ng-click="submitData()">Submit</button>
+			</div>
+			<div class="col-sm-4 col-xs-6 text-center" ng-show="isAdmin">
+				<button class="btn btn-primary" ng-click="goToTimeline()">Timeline</button>
+			</div>
+		</div>
+	</div>
+</div>

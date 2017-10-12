@@ -1,0 +1,90 @@
+<div class="container-fixed">
+    <div class="row">
+        <div class="col-sm-12">
+            
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item active">
+                    <a class="nav-link" data-toggle="tab" href="#unread" role="tab">Unread</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#archive" role="tab">Archived</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#posted" role="tab">Posted</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#discard" role="tab">Discarded</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="unread" role="tabpanel">
+                    <timeline>
+                        <timeline-event ng-repeat="event in UnreadEvents" side="alternate">
+                            <timeline-badge class="{{event.badgeClass}}">
+                                <i class="glyphicon {{event.badgeIconClass}}"></i>
+                            </timeline-badge>
+                            <timeline-panel class="{{event.badgeClass}}">
+                                <timeline-heading>
+                                    <h4>{{event.title}}</h4>
+                                </timeline-heading>
+                                <p>{{event.content}}</p>
+                            </timeline-panel>
+                        </timeline-event>
+                    </timeline>
+                </div>
+                <div class="tab-pane" id="archive" role="tabpanel">
+                    <timeline>
+                        <timeline-event ng-repeat="event in events" side="alternate">
+                            <timeline-badge class="{{event.badgeClass}}">
+                                <i class="glyphicon {{event.badgeIconClass}}"></i>
+                            </timeline-badge>
+                            <timeline-panel class="{{event.badgeClass}}">
+                                <timeline-heading>
+                                    <h4>{{event.title}}</h4>
+                                </timeline-heading>
+                                <p>{{event.content}}</p>
+                            </timeline-panel>
+                        </timeline-event>
+                    </timeline>
+                </div>
+                <div class="tab-pane" id="posted" role="tabpanel">
+                    <timeline>
+                        <timeline-event ng-repeat="event in PostedEvents" side="alternate">
+                            <timeline-badge class="{{event.badgeClass}}">
+                                <i class="glyphicon {{event.badgeIconClass}}"></i>
+                            </timeline-badge>
+                            <timeline-panel class="{{event.badgeClass}}">
+                                <timeline-heading>
+                                    <h4>{{event.title}}</h4>
+                                </timeline-heading>
+                                <p>{{event.content}}</p>
+                                <div class="row">
+                                    <div class="col-sm-8"></div>
+                                    <div class="col-sm-4">
+                                        <button class="btn btn-primary">Hi</button>
+                                    </div>
+                                </div>
+                            </timeline-panel>
+                        </timeline-event>
+                    </timeline>
+                </div>
+                <div class="tab-pane" id="discard" role="tabpanel">
+                    <timeline>
+                        <timeline-event ng-repeat="event in DiscardedEvents" side="alternate">
+                            <timeline-badge class="{{event.badgeClass}}">
+                                <i class="glyphicon {{event.badgeIconClass}}"></i>
+                            </timeline-badge>
+                            <timeline-panel class="{{event.badgeClass}}">
+                                <timeline-heading>
+                                    <h4>{{event.title}}</h4>
+                                </timeline-heading>
+                                <p>{{event.content}}</p>
+                            </timeline-panel>
+                        </timeline-event>
+                    </timeline>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

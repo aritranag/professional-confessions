@@ -1,0 +1,212 @@
+html,body{
+    background-image: url('../img/background-image-gray.jpg');
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-color: #111;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    color : white;
+}
+
+.header{
+    color : white;
+    position : absolute;
+    top : 0;
+    width : 100%;
+    height : 60px;
+    background-color : #222;
+}
+
+.navbar-brand{
+    color : white !important;
+}
+.navbar-inverse{
+    border : none !important;
+}
+
+.logout-button > img{
+    width : 30px;
+    height : 30px;
+}
+.logout-button{
+    margin-top : 5px;
+}
+
+.btn > .img-responsive{
+    cursor: pointer;
+}
+
+.btn{
+    cursor: pointer !important;
+}
+
+.pull-right {
+    text-align: right;
+}
+
+
+
+.slightPadding{
+    padding-left: 30px !important;
+}
+
+.tab-content{
+    margin-top: 4px;
+}
+
+.nav-item.active{
+    color : black;
+    border : 1px solid grey;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.nav-item.active > .nav-link{
+    color : blue !important;
+}
+.nav-link{
+    color : grey !important;
+}
+
+
+
+/*  ----------------------------- LOGIN ---------------------------------------------- */
+.spacer{
+    height : 10em;
+}
+
+.login-container.heading{
+    text-align: center;
+    vertical-align: middle;
+}
+.heading p{
+    text-align: center;
+    font-size: 6rem;
+    color : white !important;
+}
+
+@media (max-width: 480px){
+    .heading p{
+        font-size: 40px;
+    }
+    .spacer{
+        height : 8em;
+    }
+    .description p{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 760px){
+    .heading p{
+        font-size: 50px;
+    }
+    .spacer{
+        height : 12em;
+    }
+    .description p{
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width : 1200px){
+    .heading p{
+        font-size: 60px;
+    }
+    .spacer{
+        height : 15em;
+    }
+    .description p{
+        font-size: 50px;
+    }
+
+}
+@media (min-width: 1204px){
+    .heading p{
+        font-size: 6em;
+    }
+    .spacer{
+        height : 8em;
+    }
+    .description p{
+        font-size: 40px;
+    }
+
+}
+
+.description p{
+    text-align: center;
+    font-style: italic;
+    color : white !important;
+}
+
+/* -----------------FOR THE LINKEDIN BUTTON------------------------------------ */
+
+.spacer2{
+    height : 3em;
+}
+
+@media (max-width: 480px){
+    .linkedIn-button .btn img{
+        width : 200px;
+        height: 50px;
+    }
+}
+
+
+/*  ----------------------------- MAIN PAGE ---------------------------------------------- */
+@media (min-width: 768px){
+    .navbar-right {
+        float: right!important;
+        margin-right: 0px !important;
+    }
+}
+
+.main-container{
+    margin-top: 20px;
+    color : white;
+}
+
+.main-container > .spacer{
+    height : 160px;
+}
+
+.main-container > .spacer2{
+    height : 20px;
+}
+
+.share-heading{
+    color : white;
+}
+
+.hello-user-label{
+    font-size: 3em;
+}
+
+.radio-label{
+    font-size: 20px;
+}
+
+@media (min-width: 760px) and (max-width : 1024px){
+    .main-container > .spacer{
+        height : 160px;
+    }
+}
+
+@media (max-width : 480px){
+    .main-container > .spacer{
+        height : 70px;
+    }
+    .hello-user-label{
+        font-size: 2em;
+    }
+    .radio-label{
+        font-size: 12px;
+    }
+}

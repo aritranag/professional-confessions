@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angbootApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Professional Confessions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="ICON">
+
+        <!-- Le styles -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap/glyphicon-bootstrap.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- plugin css -->
+        <link rel="stylesheet" href="css/plugins/angular-timeline/angular-timeline.css" />
+        <link rel="stylesheet" href="css/plugins/angular-timeline/angular-timeline-animations.css" />
+        <link rel="stylesheet" href="css/plugins/angular-timeline/angular-timeline-bootstrap.css" />
+        <link rel="stylesheet" href="css/plugins/sweetalert/sweetalert.css" />
+
+        <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/vendor/angular.min.js"></script>
+        <script type="text/javascript" src="//platform.linkedin.com/in.js">
+            //here goes the api key, and the callback function
+            api_key: 810sx4nrekauq0
+            onLoad: onLinkedInLoad
+            authorize: true
+        </script>
+
+            <!-- Plugin js -->
+            <script src="js/plugins/angular-timeline.js"></script>
+            <script src="js/plugins/sweetalert.min.js"></script>
+            <script src="js/plugins/angular-sweetalert.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/linkedin.js"></script>
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+              <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body ng-controller="AppCtrl" id="appBody">
+        <!-- header --
+        <ng:include src="'views/header.html'"></ng:include>
+        <!-- body -->
+        <div class="">
+            <div class="row-fluid">
+                <ng:view></ng:view>
+            </div>
+        </div>
+        <!--foooter-->
+        <ng:include src="'views/footer.html'"></ng:include>
+    </body>
+
+</html>
